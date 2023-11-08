@@ -22,7 +22,6 @@ html {
 
  body{
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +29,6 @@ html {
  }
 
  .contenedor{
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,4 +118,46 @@ html {
 
  .contenidoDer img{
   width: 93%;
+ }
+
+
+ @media (max-width:376px){
+  body{
+   height: auto;
+  
+  }
+  
+  .contenedor{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0;
+    height: auto;
+  }
+
+  .contenidoDer img{
+    width: 100%;
+    margin-bottom: 1rem;
+   }
+
+   .contenidoIzq__texto h2{
+    font-size: 2.0rem;
+   }
+
+   .contenidoIzq{
+    padding:0 1.5rem;
+   }
+
+   .contenidoIzq__texto p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+   }
+
+   .contenidoIzq__texto li{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-size: auto;
+    padding-left: 2.5rem;
+   }
  }

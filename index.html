@@ -35,7 +35,12 @@
     </div>
 
     <div class="contenidoDer">
-      <img src=".//assets/images/illustration-sign-up-desktop.svg" alt="">
+      <picture>
+        <source media="(min-width: 675px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <source media="(max-width: 375px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagen">
+      </picture>
+      
     </div>
 
   </main>
