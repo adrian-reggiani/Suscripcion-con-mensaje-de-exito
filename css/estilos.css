@@ -1,0 +1,123 @@
+:root{
+ /*Primary*/
+ --Tomato: hsl(4, 100%, 67%);
+
+    /*Neutral*/
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+ body{
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Charcoal-Grey);
+ }
+
+ .contenedor{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  height: 35rem;
+  background-color: white;
+  width: 50rem;
+ }
+
+ .contenidoIzq{
+  padding: 0rem 3rem;
+  margin-bottom: 1.5rem;
+
+ }
+
+ .contenidoIzq__texto h2{
+  font-size: 2.5rem;
+  color: var(--Charcoal-Grey);
+  font-weight: bold;
+  margin: 1rem 0 ;
+
+ }
+
+ .contenidoIzq__texto {
+  color: var(--Charcoal-Grey);
+  font-size: 0.8rem;
+  
+ }
+
+ .contenidoIzq__texto p{
+  margin-bottom: 1.5rem;
+ }
+
+ .contenidoIzq__texto ul{
+  padding: 0;
+  
+ }
+
+ .contenidoIzq__texto li{
+  list-style: none;
+  background-image:url(../assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+ }
+
+ .contenidoIzq_formulario form {
+  color: var(--Charcoal-Grey);
+  display: flex;
+  flex-direction: column;
+ }
+
+ .contenidoIzq_formulario label{
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+ }
+
+ .contenidoIzq_formulario input{
+  border: 1px solid var(--Grey);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+ }
+
+ .contenidoIzq_formulario input:focus-visible{
+  outline: var(--Charcoal-Grey) solid 1px;
+  
+ }
+
+ .contenidoIzq_formulario button{
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--Charcoal-Grey);
+  color: white;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+ }
+
+ .contenidoIzq_formulario button:hover{
+  background: linear-gradient(to left, var(--Tomato), #ff537b);
+ }
+
+
+ .contenidoDer img{
+  width: 93%;
+ }
