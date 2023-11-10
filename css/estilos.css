@@ -161,3 +161,39 @@ html {
     padding-left: 2.5rem;
    }
  }
+
+@media (min-width:376px) and (max-width:690px){
+  .contenedor{
+    flex-direction: column-reverse;
+    width: 25rem;
+    height: 40rem;
+    
+  }
+
+  .contenidoIzq__texto h2 {
+    font-size: 220%;
+    margin-top: 0;
+  }
+
+
+  .contenidoDer{
+    width: 80%;
+    margin: auto;
+  }
+  .contenidoDer img{
+   width: 100%;
+  }
+
+  .contenidoIzq_formulario button{
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .contenidoIzq_formulario label{
+    margin-top: 0.5rem;
+  }
+
+  .contenidoIzq_formulario input{
+    padding: 0.7rem;
+  }
+}
