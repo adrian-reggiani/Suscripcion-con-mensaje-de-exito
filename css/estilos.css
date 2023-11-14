@@ -22,10 +22,12 @@ html {
 
  body{
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--Charcoal-Grey);
+  margin: 0;
  }
 
  .contenedor{
@@ -100,7 +102,7 @@ html {
   
  }
 
- .contenidoIzq_formulario button{
+ .button{
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
@@ -111,7 +113,7 @@ html {
   cursor: pointer;
  }
 
- .contenidoIzq_formulario button:hover{
+ .button:hover{
   background: linear-gradient(to left, var(--Tomato), #ff537b);
  }
 
@@ -120,6 +122,47 @@ html {
   width: 93%;
  }
 
+ /* Pagina Success    */
+
+ .contenidoMobile{
+  width: 275px;
+  background-color: white;
+  border-radius: 1rem;
+  height: 300px;
+  padding: 2rem;
+  margin: auto;
+ }
+
+ .contenidoMobile  img{
+  width: 2rem;
+  margin-bottom: 1rem;
+ }
+
+ .contenidoMobile h2{
+  color: var(--Dark-Slate-Grey);
+  font-size: 2rem;
+  margin: 0;
+ }
+
+ .contenidoMobile p{
+  font-size: 0.57rem;
+  margin-top: 0.8rem;
+  color: var(--Charcoal-Grey);
+ }
+
+ .contenidoMobile p span{
+  font-weight: bold;
+  color: var(--Dark-Slate-Grey);
+ }
+
+ .contenidoMobile .button{
+  margin-top:1rem;
+  width: 13rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+ }
+ /* Fin Pagina Success*/
 
  @media (max-width:376px){
   body{
@@ -160,6 +203,41 @@ html {
     background-size: auto;
     padding-left: 2.5rem;
    }
+
+    /* Pagina Success  */
+    .contenidoMobile {
+      width: auto;
+      height: 100vh;
+      border-radius: 0;
+    }
+
+    .contenidoMobile h2{
+      line-height: 2rem;
+    }
+     
+      .contenidoMobile img {
+        width: 3rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      .contenidoMobile p {
+        font-size: 0.8rem;
+        margin-top: 1.5rem;
+        margin-bottom: 13rem;
+        line-height: 1.2rem;
+      }
+
+      .contenidoMobile .button {
+        margin-top: 1rem;
+        width: 16rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+      
+     /* Fin Pagina Success*/
  }
 
 @media (min-width:376px) and (max-width:690px){
