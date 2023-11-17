@@ -27,9 +27,11 @@
       </div>
       <div class="contenidoIzq_formulario">
         <form action="">
-          <label for="email">Email address</label>
+          <div class="form-encabezado">
+            <label class="correo" for="email">Email address</label>
+          </div>
           <input type="text" name="email" id="email" placeholder="email@company.com">
-          <button class="button">Subscribe to monthly newsletter</button>
+          <button class="button" onclick="validacion()">Subscribe to monthly newsletter</button>
         </form>
       </div>
     </div>
@@ -39,11 +41,9 @@
         <source media="(min-width: 700px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
         <source media="(max-width: 690px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
         <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagen">
-      </picture>
-      
+      </picture>  
     </div>
-
   </main>
-  
+  <script src="./script/script.js"></script>
 </body>
 </html>
