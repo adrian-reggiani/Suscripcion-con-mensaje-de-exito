@@ -14,7 +14,7 @@ validacion = () =>{
     event.preventDefault()
     const esValido = expReg.test(email.value); //Verifica que el correo cumpla con la expresion regular y devuelve un true.
     if(esValido){
-        window.location.href = 'http://127.0.0.1:5500/pages/success.html'
+        window.location.href = 'https://suscripcion-con-mensaje-de-exito.netlify.app/pages/success.html'
     }else{
         email.classList.add('error');
         formEncabezado.appendChild(correoInvalido);
